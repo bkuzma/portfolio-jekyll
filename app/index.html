@@ -1,0 +1,38 @@
+---
+layout: default
+regenerate: true
+---
+
+<div class="container">
+
+  <div class="row">
+    <section class="page-content primary col-md-12" role="main">
+      <h3 class="page-header">Work</h3>
+
+      {% for post in site.posts %}
+        <article class="project callout">
+
+          <div>
+            <h4 class="lead">{{post.title}}</h4>
+            {{post.content}}
+            {% if post.project_url %}
+              <a href="{{post.project_url}}" target="_blank">Project Site</a>
+            {% endif %}
+          </div>
+
+          {% if post.images %}
+          <div class="carousel">
+            {% for image in post.images %}
+            <figure>
+              <img src="images/{{image.url}}" width="auto" height="606">
+            </figure>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+        </article>
+      {% endfor %}
+    </section>
+  </div>
+
+</div>

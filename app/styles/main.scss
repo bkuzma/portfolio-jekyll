@@ -1,0 +1,158 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 768px;
+
+$blue: #5671b2;
+$blue-lighter: #5672b3;
+$green: #528152;
+$red: #bd3121;
+$foam: #c0dfb1;
+$orange: #e0933f;
+$gray-lighter: #eee;
+
+@font-face {
+  font-family: 'Muli';
+  src: url('../fonts/Muli-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+
+body {
+  font-family: Muli;
+  background-color: $gray-lighter;
+}
+
+a {
+  text-decoration: underline;
+  color: $red;
+  transition: color 0.2s ease;
+}
+
+.project {
+
+  a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid $blue;
+  background-color: #fff;
+}
+.callout h4 {
+  margin-top: 0;
+}
+.callout code,
+.callout .highlight {
+  background-color: #fff;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 50;
+
+  &::before {
+    color: $green;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: $orange;
+}
+
+.slick-dots li button:before {
+  color: $orange;
+}
+
+.carousel img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.slick-slider {
+  margin-bottom: 50px;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 100px;
+  border-top: 1px solid #e5e5e5;
+}
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $screen-sm-min) {
+  .slick-next,
+  .slick-prev {
+    width: 30px;
+    height: 30px;
+
+    &::before {
+      font-size: 30px;
+    }
+  }
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-md-min) {
+  .slick-next,
+  .slick-prev {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      color: $green;
+      font-size: 40px;
+    }
+  }
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $screen-lg-min) {
+
+}

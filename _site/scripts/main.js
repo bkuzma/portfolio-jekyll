@@ -1,0 +1,1 @@
+"use strict";!function(e){e(".carousel").slick({dots:!0,infinite:!0,adaptiveHeight:!0,fade:!0,arrows:!0,responsive:[{breakpoint:769,settings:{fade:!1,arrows:!1}}]})}(jQuery);

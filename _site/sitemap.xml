@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>bkuzma.github.io/k-swiss.html</loc>
+    <lastmod>2015-09-03T00:00:00-04:00</lastmod>
+  </url>
+  <url>
+    <loc>bkuzma.github.io/fanmail.html</loc>
+    <lastmod>2015-08-03T00:00:00-04:00</lastmod>
+  </url>
+  <url>
+    <loc>bkuzma.github.io/destroyer.html</loc>
+    <lastmod>2015-07-03T00:00:00-04:00</lastmod>
+  </url>
+  <url>
+    <loc>bkuzma.github.io/bite-me.html</loc>
+    <lastmod>2015-06-03T00:00:00-04:00</lastmod>
+  </url>
+  <url>
+    <loc>bkuzma.github.io/the-strange-agency.html</loc>
+    <lastmod>2015-05-03T00:00:00-04:00</lastmod>
+  </url>
+  <url>
+    <loc>bkuzma.github.io/</loc>
+  </url>
+    <url>
+      <loc>bkuzma.github.io/the-strange-agency.html</loc>
+    </url>
+    <url>
+      <loc>bkuzma.github.io/bite-me.html</loc>
+    </url>
+    <url>
+      <loc>bkuzma.github.io/destroyer.html</loc>
+    </url>
+    <url>
+      <loc>bkuzma.github.io/fanmail.html</loc>
+    </url>
+    <url>
+      <loc>bkuzma.github.io/k-swiss.html</loc>
+    </url>
+</urlset>
