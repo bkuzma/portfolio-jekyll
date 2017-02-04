@@ -7,8 +7,8 @@ url: bkuzma.github.io
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: app
 destination: .tmp
-exclude: ['images', 'scripts', 'fonts', 'styles']
-keep_files: ['images', 'scripts', 'fonts', 'styles']
+exclude: ['images', 'scripts', 'fonts', 'styles', 'CNAME']
+keep_files: ['images', 'scripts', 'fonts', 'styles', 'CNAME']
 
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on

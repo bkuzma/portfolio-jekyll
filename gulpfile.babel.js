@@ -112,7 +112,8 @@ gulp.task('bower-images', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
-    '!app/*.html'
+    '!app/*.html',
+    'CNAME'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
