@@ -12,7 +12,7 @@ regenerate: true
       {% for post in site.posts %}
         <article class="project callout">
 
-          <div>
+          <div class="project-header">
             <h4 class="lead">{{post.title}}</h4>
             {{post.content}}
             {% if post.project_url %}
