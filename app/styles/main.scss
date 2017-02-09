@@ -19,6 +19,7 @@ $blue: #5671b2;
 $blue-lighter: #5672b3;
 $green: #528152;
 $red: #bd3121;
+$red-lighter: lighten($red, 20%);
 $foam: #c0dfb1;
 $orange: #e0933f;
 $gray-lighter: #eee;
@@ -46,6 +47,34 @@ a {
   text-decoration: underline;
   color: $red;
   transition: color 0.2s ease;
+
+  &:hover {
+    color: $red-lighter;
+  }
+}
+
+.contact-links {
+  margin: 10px 0;
+}
+
+.contact-link {
+  margin-right: 10px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+
+    svg {
+      fill: $red-lighter;
+    }
+  }
+
+  svg {
+    fill: $red;
+    width: auto;
+    height: 25px;
+    transition: fill 0.2s ease;
+  }
 }
 
 .project {
