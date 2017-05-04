@@ -15,11 +15,6 @@ $orange: #e0933f;
 $gray-lighter: #eee;
 
 @font-face {
-  font-family: 'Muli';
-  src: url('../fonts/Muli-Regular.ttf')  format('truetype');
-}
-
-@font-face {
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
@@ -29,7 +24,7 @@ $gray-lighter: #eee;
 }
 
 body {
-  font-family: Muli;
+  font-family: arial;
   background-color: $gray-lighter;
 }
 
