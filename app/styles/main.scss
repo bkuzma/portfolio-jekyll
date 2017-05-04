@@ -24,7 +24,7 @@ $gray-lighter: #eee;
 }
 
 body {
-  font-family: arial;
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
   background-color: $gray-lighter;
 }
 
@@ -36,6 +36,17 @@ a {
   &:hover {
     color: $red-lighter;
   }
+}
+
+p {
+  line-height: 1.8;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-weight: 300;
 }
 
 .contact-links {
