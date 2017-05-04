@@ -3,7 +3,6 @@
 
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
-$screen-lg-min: 768px;
 
 $blue: #5671b2;
 $blue-lighter: #5672b3;
@@ -23,9 +22,14 @@ $gray-lighter: #eee;
     src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
 }
 
+*, :after, :before {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
   background-color: $gray-lighter;
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  margin: 0;
 }
 
 a {
@@ -47,6 +51,12 @@ p {
 .h3,
 .h4 {
   font-weight: 300;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .contact-links {
@@ -138,6 +148,10 @@ p {
 // to tablets.
 
 @media (min-width: $screen-sm-min) {
+  .container {
+    width: 750px;
+  }
+
   .slick-next,
   .slick-prev {
     width: 30px;
@@ -155,6 +169,10 @@ p {
 // Columns, offsets, pushes, and pulls for the desktop device range.
 
 @media (min-width: $screen-md-min) {
+  .container {
+    width: 970px;
+  }
+
   .slick-next,
   .slick-prev {
     width: 40px;
@@ -165,13 +183,4 @@ p {
       font-size: 40px;
     }
   }
-}
-
-
-// Large grid
-//
-// Columns, offsets, pushes, and pulls for the large desktop device range.
-
-@media (min-width: $screen-lg-min) {
-
 }
