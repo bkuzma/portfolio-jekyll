@@ -2,17 +2,7 @@
   "name": "portfolio-webapp",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
     "slick-carousel": "~1.5.9"
-  },
-  "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
-      ]
-    }
   },
   "devDependencies": {
     "chai": "~3.4.2",
