@@ -6,19 +6,16 @@ regenerate: true
 <div class="container">
 
   <div class="row">
-    <section class="page-content primary col-md-12" role="main">
-      <h3 class="page-header">Selected Work</h3>
+    <section class="page-content col-md-12" role="main">
+      <h3 class="h3">Selected Work</h3>
 
       {% for post in site.posts %}
-        <article class="project callout">
-
-          <div class="project-header">
-            <h4 class="lead">{{post.title}}</h4>
-            {{post.content}}
-            {% if post.project_url %}
-              <a href="{{post.project_url}}" target="_blank">Project Site</a>
-            {% endif %}
-          </div>
+        <article class="project">
+          <h4 class="h4 project__title">{{post.title}}</h4>
+          {{post.content}}
+          {% if post.project_url %}
+            <a class="project__link" href="{{post.project_url}}" target="_blank">Project Site</a>
+          {% endif %}
 
           {% if post.images %}
           <div class="carousel">

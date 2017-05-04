@@ -45,47 +45,33 @@ a {
 .contact-link {
   margin-right: 6px;
   text-decoration: none;
+}
+
+.contact-link__svg {
+  fill: $red;
+  width: auto;
+  height: 32px;
+  transition: fill 0.2s ease;
 
   &:hover {
-    text-decoration: none;
-
-    svg {
-      fill: $red-lighter;
-    }
-  }
-
-  svg {
-    fill: $red;
-    width: auto;
-    height: 32px;
-    transition: fill 0.2s ease;
+    fill: $red-lighter;
   }
 }
 
 .project {
-
-  a {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-.project-header {
-  margin-bottom: 20px;
-}
-
-.callout {
   margin: 20px 0;
   padding: 20px 30px 15px 15px;
   border-left: 5px solid $blue;
   background-color: #fff;
 }
-.callout h4 {
-  margin-top: 0;
+
+.project__title {
+  margin: 0;
 }
-.callout code,
-.callout .highlight {
-  background-color: #fff;
+
+.project__link {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .slick-prev {
@@ -114,6 +100,10 @@ a {
   color: $orange;
 }
 
+.carousel {
+  margin-top: 20px;
+}
+
 .carousel img {
   margin: 0 auto;
   max-width: 100%;
@@ -129,10 +119,6 @@ a {
   padding-bottom: 40px;
   margin-top: 100px;
   border-top: 1px solid #e5e5e5;
-}
-
-.lead {
-  margin-bottom: 0px;
 }
 
 // Small grid
