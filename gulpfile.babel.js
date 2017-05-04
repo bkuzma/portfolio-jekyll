@@ -6,6 +6,7 @@ import del from 'del';
 import {stream as wiredep} from 'wiredep';
 import shell from 'shelljs';
 import {argv} from 'yargs';
+import critical from 'critical';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -146,6 +147,18 @@ gulp.task('serve', ['jekyll', 'styles', 'fonts'], () => {
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 
+gulp.task('critical-css', ['jekyll:prod'], () => {
+  return gulp.src('dist/*.html')
+    .pipe(critical.stream({
+      base: 'dist/',
+      inline: true,
+      minify: true,
+      timeout: 60000
+    }))
+    .on('error', (err) => {console.log(err)})
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('serve:dist', () => {
   browserSync({
     notify: false,
@@ -189,15 +202,15 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-// 'gulp deploy' -- pushes dist folder to Github
-gulp.task('deploy', () => {
+// builds and pushes dist folder to Github
+gulp.task('deploy', ['build'], () => {
   return gulp.src('dist/**/*')
     .pipe($.ghPages({
       branch: 'master'
     }));
 });
 
-gulp.task('build', ['lint', 'jekyll:prod', 'images', 'fonts', 'bower-images', 'extras'], () => {
+gulp.task('build', ['lint', 'jekyll:prod', 'critical-css', 'images', 'fonts', 'bower-images', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
