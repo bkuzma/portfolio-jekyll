@@ -70,9 +70,9 @@ p {
 
 .contact-link__svg {
   fill: $red;
-  width: auto;
   height: 32px;
   transition: fill 0.2s ease;
+  width: 32px;
 
   &:hover {
     fill: $red-lighter;
