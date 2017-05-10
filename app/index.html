@@ -19,10 +19,12 @@ regenerate: true
 
           {% if post.images %}
           <div class="carousel">
-            {% for image in post.images %}
-            <figure>
-              <img src="images/{{image.url}}" width="auto" height="606">
-            </figure>
+            {% for image in post.images.mobile limit:1 %}
+              <div class="project-image">
+                <div class="project-image__wrapper--mobile">
+                  <img class="project-image__wrapper__image" src="images/{{image.url}}">
+                </div>
+              </div>
             {% endfor %}
           </div>
           {% endif %}
